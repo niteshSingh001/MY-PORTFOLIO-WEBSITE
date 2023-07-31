@@ -315,6 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  margin: 14px 0 75px 0;
 }
 .skill p {
     color: #B8B8B8;
