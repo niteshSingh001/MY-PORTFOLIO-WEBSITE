@@ -34,8 +34,7 @@ router.post("/contact", (req, res) => {
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
-  console.log(name);
-  console.log("dg");
+
   const mail = {
     from: name,
     to: "ns368497@gmail.com",
@@ -45,7 +44,6 @@ router.post("/contact", (req, res) => {
            <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
   };
-  console.log("dgg");
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json(error);
