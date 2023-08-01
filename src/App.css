@@ -342,7 +342,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
+/* .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -465,7 +465,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
-}
+} */
 
 /************ Projects Css ************/
 .contact {
@@ -617,3 +617,75 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+/* portfolio projects */
+.project_header{
+  text-align: center;
+  font-size: 45px;
+	font-weight: 700;
+  margin: 14px 0 75px 0;
+
+}
+
+
+.portfolio_container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem;
+}
+
+.portfolio_item{
+  background:  #121212;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.portfolio_item-image{
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio_item h3{
+  margin: 1.2rem 0 2rem;
+}
+
+.portfolio_item-cta{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+} 
+
+.project_btn {
+  text-decoration:none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding:0.75rem 1.2rem;
+	position: relative;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+	font-weight: 500;
+}
+
+
+
+
+/* ################ MEDIA QUERIES (MEDIUM DEVICES) ########### */
+ @media screen and (max-width:1024px) {
+.portfolio_container{
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+}
+
+/* ################ MEDIA QUERIES (SMALL DEVICES) ########### */
+ @media screen and (max-width:600px) {
+.portfolio_container{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+} 
