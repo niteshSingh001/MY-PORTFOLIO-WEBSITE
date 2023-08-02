@@ -59,6 +59,7 @@ function Banner() {
               successful projects. I enjoyed every step of creation, learning,
               development, and collaboration
             </p>
+
             <button onClick={() => console.log("connect")}>
               Let's connect
               <ArrowRightCircle size={25} />

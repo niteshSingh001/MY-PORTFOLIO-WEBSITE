@@ -33,7 +33,7 @@ const data = [
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="projects">
       <h1 className="project_header">Projects</h1>
 
       <div className="container portfolio_container">
