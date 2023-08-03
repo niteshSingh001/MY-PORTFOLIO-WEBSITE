@@ -48,7 +48,6 @@ function Contact() {
 
   return (
     <div>
-      (
       <section className="contact" id="connect">
         <Container>
           <Row className="align-items-center">
@@ -129,7 +128,6 @@ function Contact() {
           </Row>
         </Container>
       </section>
-      )
     </div>
   );
 }

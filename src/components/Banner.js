@@ -3,11 +3,12 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import Cv from "./Cv/Cv";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = [" Web Developer", " Web Designer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -49,21 +50,16 @@ function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm a `}
+              {`Hi I'm Nitesh Singh a `}
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              My name is Nitesh Singh. I'm a very dedicated and hardworking
-              person who always thrives working on end-to-end products. With my
-              experience and knowledge, I learn many skills and make many
-              successful projects. I enjoyed every step of creation, learning,
-              development, and collaboration
+              I'm a very dedicated and hardworking person who always thrives
+              working on end-to-end products. With my experience and knowledge,
+              I learn many skills and make many successful projects. I enjoyed
+              every step of creation, learning, development, and collaboration.
             </p>
-
-            <button onClick={() => console.log("connect")}>
-              Let's connect
-              <ArrowRightCircle size={25} />
-            </button>
+            <Cv />
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
@@ -75,3 +71,10 @@ function Banner() {
 }
 
 export default Banner;
+
+{
+  /* <button onClick={() => console.log("connect")}>
+Let's connect
+<ArrowRightCircle size={25} />
+</button> */
+}
