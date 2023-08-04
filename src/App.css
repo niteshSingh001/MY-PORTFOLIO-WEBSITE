@@ -797,4 +797,10 @@ footer a{
     .footer_socials{
       margin-bottom: 2.6rem;
     }
+   
+}
+@media screen and (max-width:1300px){
+  .banner h1 {
+    font-size: 25px;
+  }
 }
